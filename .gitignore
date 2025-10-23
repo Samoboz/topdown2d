@@ -1,0 +1,39 @@
+# Unity spezifische Dateien
+[Libraries]
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+MemoryCaptures/
+
+# VS / Rider / JetBrains / Visual Studio Code
+.vs/
+.idea/
+.vscode/
+
+# Build-Dateien
+*.apk
+*.aab
+*.exe
+*.app
+*.ipa
+
+# Sonstige generierte Dateien
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Crash Reports
+sysinfo.txt
