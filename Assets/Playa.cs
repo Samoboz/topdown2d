@@ -32,4 +32,16 @@ public class Playa : MonoBehaviour
             animator.SetFloat("Speed", bewegung.magnitude);
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            EnemyAII enemy = collision.GetComponent<EnemyAII>();
+            if (enemy != null)
+            {
+                enemy.Die();
+            }
+        }
+    }
+
 }

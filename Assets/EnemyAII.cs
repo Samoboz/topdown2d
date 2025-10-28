@@ -116,7 +116,7 @@ public class EnemyAII : MonoBehaviour
         state = State.Dead;
 
         // Bewegung sofort stoppen
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
 
         // Collider deaktivieren, damit kein weiterer Treffer registriert wird
         Collider2D col = GetComponent<Collider2D>();
@@ -127,7 +127,7 @@ public class EnemyAII : MonoBehaviour
         if (animator != null)
             animator.SetTrigger("Die");
 
-        // Gegner nach kurzer Zeit zerstören (optional)
+        // Gegner nach kurzer Zeit zerstï¿½ren (optional)
         Destroy(gameObject, 1.5f);
     }
 
